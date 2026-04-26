@@ -32,13 +32,18 @@ python app.py
 
 
 🔗 Useful Endpoints
+
 Interactive Swagger UI: http://localhost:8000/docs
+
 List All Tests: http://localhost:8000/tests
+
 Health Status: http://localhost:8000/health
 
 
 📁 Project Structure
+
 Plaintext
+
 real-time-testing-api/
 ├── app.py              # FastAPI server & logic
 ├── init_data.py        # Seed script for initial tests
@@ -51,7 +56,9 @@ real-time-testing-api/
 
     
 🎮 Usage Guide
+
 1. Create a Test
+   
 Endpoint: POST /tests
 
 Bash
@@ -64,6 +71,7 @@ curl -X POST "http://localhost:8000/tests" \
 
 
 2. Run a Test Case
+   
 Endpoint: POST /tests/{test_id}/run
 
 Bash
@@ -73,6 +81,7 @@ curl -X POST "http://localhost:8000/tests/YOUR_ID/run" \
 
 
 3. Export/Import
+   
 Export: GET /export/{test_id} — Downloads the test as a .json file.
 Import: POST /import — Upload a .json file to restore a test.
 
