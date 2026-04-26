@@ -24,6 +24,8 @@ Built with FastAPI, it offers instant feedback and persistent storage without th
 
 🚀 Quick Start (20 Seconds)
 
+
+
 Install Dependencies
 
 Bash
@@ -53,17 +55,17 @@ Plaintext
 
 real-time-testing-api/
 
-├── app.py              # FastAPI server & logic
+├── app.py                                                                 # FastAPI server & logic
 
-├── init_data.py        # Seed script for initial tests
+├── init_data.py                                                            # Seed script for initial tests
 
-├── requirements.txt    # Python dependencies
+├── requirements.txt                                                        # Python dependencies
 
-├── data/               # Persistent Storage (Auto-generated)
+├── data/                                                                    # Persistent Storage (Auto-generated)
 
-│   └── tests.json      # Main test database
+│   └── tests.json                                                          # Main test database
 
-└── tests/              # Internal API tests
+└── tests/                                                                  # Internal API tests
     └── test_api.py
 
 
