@@ -7,16 +7,23 @@ Built with FastAPI, it offers instant feedback and persistent storage without th
 
 
 ✨ Key Features
+
 ⚡ Real-time Execution: Run test cases with instant pass/fail results.
+
 📂 Export/Import: Full support for JSON-based test portability.
+
 🛡️ Persistent Storage: Automatic local JSON storage—no database required.
+
 📱 Interactive Docs: Built-in Swagger UI for testing endpoints visually.
+
 🚀 Zero Docker: Pure Python implementation for seamless deployment.
+
 🌐 CORS Ready: Pre-configured for easy frontend integration.
 
 
 
 🚀 Quick Start (20 Seconds)
+
 Install Dependencies
 
 Bash
@@ -45,11 +52,17 @@ Health Status: http://localhost:8000/health
 Plaintext
 
 real-time-testing-api/
+
 ├── app.py              # FastAPI server & logic
+
 ├── init_data.py        # Seed script for initial tests
+
 ├── requirements.txt    # Python dependencies
+
 ├── data/               # Persistent Storage (Auto-generated)
+
 │   └── tests.json      # Main test database
+
 └── tests/              # Internal API tests
     └── test_api.py
 
@@ -87,13 +100,17 @@ Import: POST /import — Upload a .json file to restore a test.
 
 
 ☁️ Deployment (No Docker)
+
 Option 1: Render / Railway (Recommended)
+
 Connect your GitHub repository.
 
 Build Command: pip install -r requirements.txt
+
 Start Command: uvicorn app:app --host 0.0.0.0 --port $PORT
 
 Option 2: Local Server
+
 Simply run the Python script on any machine with Python 3.8+:
 
 Bash
@@ -101,5 +118,7 @@ python app.py
 
 
 🛠️ Maintenance
+
 Reset Data: Delete the data/tests.json file or re-run python init_data.py.
+
 Verify Health: Monitor http://localhost:8000/health for uptime tracking.
